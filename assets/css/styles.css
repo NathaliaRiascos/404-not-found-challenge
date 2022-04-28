@@ -82,8 +82,14 @@ img {
   text-transform: uppercase;
   width: 216px;
 }
+@media screen and (min-width: 800px) {
+  img {
+    width: 539.22px;
+    height:447.43px;
+  }
+}
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
 
   main {
     flex-direction: row;
@@ -98,13 +104,8 @@ img {
     justify-content: flex-start;
   }
 
-  .container-img, .card {
+  .card {
     width: 50%;
-  }
-
-  img {
-    width: 539.22px;
-    height:447.43px;
   }
 
   .card {
