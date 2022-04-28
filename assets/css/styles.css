@@ -1,0 +1,123 @@
+:root {
+  --font-inconsolata: 'Inconsolata', monospace;
+  --font-space-mono: 'Space Mono', monospace;
+  --color-black-gray: #333333;
+  --color-light-gray: #4F4F4F;
+  --color-white: #ffff;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-space-mono);
+  color: var(--color-black-gray);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content:center;
+  padding-left: 24px;
+  padding-top: 20px;
+}
+
+.container-img {
+  display: flex;
+  margin-top: 64px;
+  margin-bottom: 60px;
+  justify-content: center;
+}
+
+.card > * {
+  margin-bottom: 60px;
+}
+
+header {
+  width: 100%;
+}
+
+.logo {
+  line-height: 1.574em;
+  letter-spacing: -0.08em;
+  margin: 0;
+  font-family: var(--font-inconsolata);
+}
+
+img {
+  width: 286.83px;
+  max-width: 539.22px;
+  display: block;
+  object-fit: contain;
+}
+
+.card__title {
+  font-size: 3em;
+  line-height: 71.09px;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+}
+
+.card__pagraphy {
+  color: var(--color-light-gray);
+  font-size: 1.125em;
+  max-width: 381px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 27px;
+  letter-spacing: -0.035em;
+  margin-bottom: 66px;
+}
+
+.card__btn {
+  background-color: var(--color-black-gray);
+  border: none;
+  color: var(--color-white);
+  font-family: var(--font-space-mono);
+  font-weight: 700;
+  height: 68px;
+  outline-color: rgba(0,0,0,0);
+  text-transform: uppercase;
+  width: 216px;
+}
+
+@media screen and (min-width: 768px) {
+
+  main {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 77px;
+    padding-top: 40px;
+    align-items: center;
+  }
+  .container-img {
+    margin: 0;
+    justify-content: flex-start;
+  }
+
+  .container-img, .card {
+    width: 50%;
+  }
+
+  img {
+    width: 539.22px;
+    height:447.43px;
+  }
+
+  .card {
+    max-width: 586px;
+  }
+  .card__title {
+    font-size: 4em;
+    line-height: 94.78px;
+  }
+
+  .card__pagraphy {
+    font-size: 1.5em;
+    line-height: 36px;
+    margin-bottom: 64px;
+  }
+}
